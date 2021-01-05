@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  max-width: 1450px;
+  min-width: 375px;
+  overflow: hidden;
+}
+
+html {
+  background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+  margin-top: 10rem;
+}
+
+.header {
+  padding-top: 4rem;
+  background-image: url(./images/bg-pattern-card.svg);
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  height: 175px;
+}
+
+.card {
+text-align: center;
+  height: 425px;
+  min-width: 400px;
+  max-width: 400px;
+  width: 60%;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 2%;
+}
+
+.favicon {
+  min-width: 50px;
+  max-width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 100%;
+  padding: 5px;
+  position: relative;
+  top: 45px;
+}
+
+.favicon img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.text {
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.socials {
+  border-top: 1px hsl(227, 10%, 46%) solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.followers,
+.likes,
+.photos {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.age {
+  margin-left: 10px;
+}
+
+.top-circle {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 10%;
+  right: 60%;
+  z-index: -1;
+}
+
+.bottom-circle {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+body {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .top-circle {
+    position: absolute;
+    top: -200px;
+    right: 300px;
+    width: 600px;
+    height: 600px;
+
+    z-index: -1;
+  }
+
+  .bottom-circle {
+    position: absolute;
+    bottom: 100px;
+    right: 300px;
+    width: 600px;
+    height: 600px;
+
+    z-index: -1;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Kumbh Sans";
+  font-weight: 700;
+  color: blue: hsl(229, 23%, 23%);
+  text-align: center;
+}
+
+p {
+    font-family: "Kumbh Sans";
+    font-weight: 400;
+    color: hsl(227, 10%, 46%)
+}
+
+span{
+    font-size: 22px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+
+}
+
+.likes p {
+    letter-spacing: 1px;
+}
+
+.photos p {
+    letter-spacing: 1px;
+}
+
+.followers p {
+    letter-spacing: 1px;
+}
+
