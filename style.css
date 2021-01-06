@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
+  
 }
+
 
 section {
   max-width: 1450px;
@@ -29,7 +31,7 @@ html {
 .card {
 text-align: center;
   height: 425px;
-  min-width: 400px;
+  min-width: 300px;
   max-width: 400px;
   width: 60%;
   background-color: white;
@@ -165,3 +167,12 @@ span{
     letter-spacing: 1px;
 }
 
+@media screen and (max-width: 600px){
+  body { 
+    position: fixed;
+  }
+    
+
+
+  
+}
